@@ -1,0 +1,20 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+:root {
+    --background-color: #111010;
+    --pink-decoration: #F196A8;
+    --curious-facts: #C17AA6;
+    --text: #D1D1D1;
+}
+.header-container{
+    width: 100vw;
+    background-color: var(--pink-decoration);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
