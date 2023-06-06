@@ -1,7 +1,19 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Kanit:wght@400;700&family=Permanent+Marker&display=swap');
+
+
+
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box; 
+   
+   /* font-family: 'Gochi Hand', cursive;
+font-family: 'Permanent Marker', cursive; */
+}
+body{
+    font-family: 'Kanit', sans-serif;
+    background-color: var(--background-color);
 }
 :root {
     --background-color: #111010;
@@ -15,6 +27,36 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: 'Gochi Hand';
     
-
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    
+}
+h1{
+    margin-right: 20px;
+}
+.main-text{
+    color: var(--text);
+    font-family: 'Kanit', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 35px;
+}
+.curious-facts{
+    color: var(--curious-facts);
+    border:4px solid var(--pink-decoration);
+    margin:35px ;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    font-size: 34px;
+}
+.favourites-button{
+    text-align: center;
 }
