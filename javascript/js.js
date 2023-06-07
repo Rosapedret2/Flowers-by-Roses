@@ -19,14 +19,27 @@ favouritesAdd.addEventListener("click", function () {
     favouriteItem.classList.add("favourite-item");
     favouriteItem.textContent = curiousFactsWindow.textContent;
     listItems.appendChild(favouriteItem);
-
+    localStorage.setItem('savedList',list.innerHTML);
+    
 })
+
+window.addEventListener('DOMContentLoaded', function() {
+    var savedList = localStorage.getItem('savedList');
+
+    if (savedList) {
+        var list = document.getElementById('list');
+        list.innerHTML = savedList;
+    }
+});
+
 
 const refreshPage = document.getElementById('next-button')
 
 refreshPage.addEventListener('click', function() {
     location.reload();
+    
 })
+// localStorage.clear();
 
 
 
