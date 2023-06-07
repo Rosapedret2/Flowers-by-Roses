@@ -19,6 +19,16 @@ favouritesAdd.addEventListener("click", function () {
     favouriteItem.classList.add("favourite-item");
     favouriteItem.textContent = curiousFactsWindow.textContent;
     listItems.appendChild(favouriteItem);
+
 })
+
+const refreshPage = document.getElementById('next-button')
+
+refreshPage.addEventListener('click', function() {
+    location.reload();
+})
+
+
+
 
  
