@@ -4,8 +4,13 @@ fetch (url)
     .then(data => showData(data))
     .catch(error => console.log(error))
 
-const showData = (data) => {
-    console.log(data.text)
 
+const curiousFactsWindow = document.getElementById('curious-facts')
+
+const showData = (data) => {
+    
+    curiousFactsWindow.textContent = data.text ;
 }
 
+
+ 
