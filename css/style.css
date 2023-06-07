@@ -65,6 +65,7 @@ h1{
     gap: 50px;
 
 }
+
 .favourites-button{
     background-color: var(--pink-decoration);
     width: 142px;
@@ -78,17 +79,19 @@ h1{
     border:none;
 }
 
+
 .next-button{
     background-color: var(--background-color);
     border: none;
 }
+
 
 .footer-title {
     color:var(--text);
     font-size:24px;
     text-align: center;
     margin-top: 55px;
-    /* border-top: var(--pink-decoration) dotted 2px; */
+    
 }
 
 #list {
@@ -97,7 +100,6 @@ h1{
 
 .favourite-item{
     color: var(--background-color);
-    /* border:4px solid var(--pink-decoration); */
     margin:15px 35px 15px 35px;
     background-color: var(--pink-decoration);
     border-radius: 15px;
@@ -105,4 +107,46 @@ h1{
     text-align: center;
     font-size: 18px;
 }
+
+@media (min-width: 992px){
+    
+    .header-container{
+        height: 100px;
+    }
+    .logo{
+        width: 110px;
+        height: 110px;
+        margin-left: 20px;
+        
+    }
+    h1{
+        margin-right: 50px;
+        font-size: 50px;
+    }
+    .main-text{ 
+        font-size: 50px;
+    }
+    .curious-facts {
+        margin:40px 210px ;
+        font-size: 40px;
+    }
+    
+    
+    .footer-title {
+        font-size:50px;
+    }
+    
+    .favourite-item{
+        margin:40px 210px;
+        padding: 20px;
+        font-size: 25px;
+    }
+    .favourites-button:hover{
+    
+        transform: scale(1.25);
+    }
+    .next-button:hover{
+        transform:scale(1.25)
+    }
+    }
 
