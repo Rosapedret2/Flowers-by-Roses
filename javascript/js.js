@@ -20,6 +20,7 @@ favouritesAdd.addEventListener("click", function () {
     favouriteItem.textContent = curiousFactsWindow.textContent;
     listItems.appendChild(favouriteItem);
     localStorage.setItem('savedList',list.innerHTML);
+    location.reload();
     
 })
 
