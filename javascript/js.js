@@ -40,7 +40,8 @@ refreshPage.addEventListener('click', function() {
     location.reload();
     
 })
-localStorage.clear();
+
+// localStorage.clear();
 
 
 
