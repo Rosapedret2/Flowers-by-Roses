@@ -14,7 +14,7 @@ const showData = (data) => {
 const favouritesAdd = document.getElementById('favourites-button')
 const listItems = document.getElementById('list')
 
-favouritesAdd.addEventListener("click", function () {
+function addCuriousFacts() {
     let favouriteItem = document.createElement("li");
     favouriteItem.classList.add("favourite-item");
     favouriteItem.textContent = curiousFactsWindow.textContent;
@@ -22,25 +22,32 @@ favouritesAdd.addEventListener("click", function () {
     localStorage.setItem('savedList',list.innerHTML);
     location.reload();
     
-})
+}
+favouritesAdd.addEventListener("click", addCuriousFacts )
 
-window.addEventListener('DOMContentLoaded', function() {
+
+
+function keepList() {
     var savedList = localStorage.getItem('savedList');
 
     if (savedList) {
         var list = document.getElementById('list');
         list.innerHTML = savedList;
     }
-});
+}
+window.addEventListener('DOMContentLoaded', keepList );
 
 
 const refreshPage = document.getElementById('next-button')
 
-refreshPage.addEventListener('click', function() {
+function reloadPage() {
     location.reload();
     
-})
-localStorage.clear();
+}
+refreshPage.addEventListener('click', reloadPage )
+
+
+// localStorage.clear();
 
 
 
