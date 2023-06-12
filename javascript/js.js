@@ -40,7 +40,7 @@ function reloadPage() {
     window.location.reload();
 }
 
-localStorage.clear();
+// localStorage.clear();
 
 module.exports = {
     reloadPage,
