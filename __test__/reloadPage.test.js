@@ -25,7 +25,7 @@ describe("test window location's reload function", () => {
     });
   
     it('calls reload function', () => {
-      reloadPage(); // as defined above..
+      reloadPage();
       expect(window.location.reload).toHaveBeenCalled();
     });
   });

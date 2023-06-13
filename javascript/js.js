@@ -43,8 +43,9 @@ function reloadPage() {
 // localStorage.clear();
 
 module.exports = {
-    reloadPage,
-    addCuriousFacts
+    addCuriousFacts,
+    reloadPage
+    // callFetch
 };
 
 
